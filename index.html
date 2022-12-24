@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+     
+        model-viewer {
+          width: 600px;
+          height: 450px;
+          outline: auto;
+          margin: 0 auto;  
+        }
+        </style>
+</head>
+<body>
+<main style="text-align: center; outline: auto;">
+        <h1>立体化されたスイーツ達</h1>
+
+        <h2 style="margin-right: 20px;">プレーンワッフル</h2>
+    
+    
+        <model-viewer 
+            alt="waff" 
+            src="https://github.com/kuze97/models/blob/main/%E3%83%AF%E3%83%83%E3%83%95%E3%83%AB.glb"  
+            shadow-intensity="1" 
+            camera-controls touch-action="pan-y">
+        </model-viewer>
+
+        <h2>チョコチップドーナツ</h2>
+        <ul>
+            <li>エネルギー</li>
+            <li>タンパク質</li>
+            <li>脂質</li>
+            <li>炭水化物...</li>
+        </ul>
+        <model-viewer 
+            alt="dounut" 
+            src="models/chocochipDonuts.glb"  
+            shadow-intensity="1" 
+            camera-controls touch-action="pan-y">
+        </model-viewer>
+        
+       
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>
