@@ -28,31 +28,63 @@
       </style>
 </head>
 <body>
-<main style="text-align: center;">
-        <h1>立体化されたスイーツ達</h1>
+    <div class=“container”>
+        <input id="t-1" type="radio" name="tab-item" checked="checked">
+        <label for="t-1" class="tab-item">タブ１</label>
+        <input id="t-2" type="radio" name="tab-item">
+        <label for="t-2" class="tab-item">タブ２</label>
+        <input id="t-3" type="radio" name="tab-item">
+        <label for="t-3" class="tab-item">タブ３</label>
+    
+        <div class="tab-content" id="c-1">
+            <main style="text-align: center;">
+                <h1>立体化されたスイーツ達</h1>
 
-        <h2 style="margin-right: 20px;">プレーンワッフル</h2>
+                    <h2 style="margin-right: 20px;">プレーンワッフル</h2>
     
     
-        <model-viewer 
-            alt="waff" 
-            src="models/ワッフル.glb"  
-            shadow-intensity="1" 
-            camera-controls touch-action="pan-y">
-        </model-viewer>
+                        <model-viewer 
+                            alt="waff" 
+                            src="models/ワッフル.glb"  
+                            shadow-intensity="1" 
+                            camera-controls touch-action="pan-y">
+                        </model-viewer>
 
-        <h2>チョコチップドーナツ</h2>
+                <h2>チョコチップドーナツ</h2>
 
-        <model-viewer 
-            alt="dounut" 
-            src="models/chocochipDonuts.glb"  
-            shadow-intensity="1" 
-            camera-controls touch-action="pan-y">
-        </model-viewer>
+                    <model-viewer 
+                        alt="dounut" 
+                        src="models/chocochipDonuts.glb"  
+                        shadow-intensity="1" 
+                        camera-controls touch-action="pan-y">
+                    </model-viewer>
         
        
 
-</main>
+            </main>
+        </div>
+        <div class="tab-content" id="c-2">
+            <ul>
+                <li>2</li>
+                <li>2</li>
+                <li>2</li>
+            </ul>
+        </div>
+    
+        <div class="tab-content" id="c-3">
+            <ul>
+                <li>3</li>
+                <li>3</li>
+                <li>3</li>
+            </ul>
+        
+        </div>
+    </div>
+
+    
+    
+    
+
 <script src="main.js"></script>
 </body>
 </html>
