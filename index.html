@@ -7,54 +7,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-        body {
-          font-family: 'ヒラギノ角ゴシック','Hiragino Sans', sans-serif;
-        }
-        model-viewer {
-          width: 60%;
-          height: 300px;
-          margin: 0 auto;
-          border: 2px solid crimson;
-          border-radius: 5px;
-        }
-        
-        @media (max-width: 599px) {
-              
-            model-viewer {
-            width: 100%;
-            }
-        }
-      </style>
 </head>
 <body>
-
-            <main style="text-align: center;">
-                <h1>立体化されたスイーツ達</h1>
-
-                    <h2 style="margin-right: 20px;">プレーンワッフル</h2>
+    <header>
+        <h1>フォトグラメトリー作例集</h1>
+    </header>
     
-    
-                        <model-viewer 
-                            alt="waff" 
-                            src="models/ワッフル.glb"  
-                            shadow-intensity="1" 
-                            camera-controls touch-action="pan-y">
-                        </model-viewer>
 
+    <div class="container">
+        <input id="t-1" type="radio" name="tab-item" checked="checked">
+        <label for="t-1" class="tab-item">お菓子<br>料理</label>
+        <input id="t-2" type="radio" name="tab-item">
+        <label for="t-2" class="tab-item">small<br>object</label>
+        <input id="t-3" type="radio" name="tab-item">
+        <label for="t-3" class="tab-item">large<br>object</label>
+    
+        <div class="tab-content" id="c-1">
+
+            <h1>立体化されたスイーツ達</h1>
+        
+                <h2 style="margin-right: 20px;">プレーンワッフル</h2>
+        
+                <model-viewer 
+                    alt="waff" 
+                    src="models/ワッフル.glb"  
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y">
+                </model-viewer>
+        
                 <h2>チョコチップドーナツ</h2>
-
-                    <model-viewer 
-                        alt="dounut" 
-                        src="models/chocochipDonuts.glb"  
-                        shadow-intensity="1" 
-                        camera-controls touch-action="pan-y">
-                    </model-viewer>
         
-       
-
-            </main>
+                <model-viewer 
+                    alt="dounut" 
+                    src="models/chocochipDonuts.glb"  
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y">
+                </model-viewer>
+                
+        </div>
+        <div class="tab-content" id="c-2">
+            <h1>small object</h1>
+        </div>
+    
+        <div class="tab-content" id="c-3">
+            <h2 style="margin-right: 20px;">道路</h2>
         
+                <model-viewer 
+                    alt="waff" 
+                    src="models/soto.glb"  
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y">
+                </model-viewer>
+        
+                <h2>階段</h2>
+        
+                <model-viewer 
+                    alt="dounut" 
+                    src="models/step.glb"  
+                    shadow-intensity="1" 
+                    camera-controls touch-action="pan-y">
+                </model-viewer>
+        </div>
+    </div>
 <script src="main.js"></script>
 </body>
 </html>
