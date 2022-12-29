@@ -30,5 +30,6 @@ model-viewer {
     model-viewer {
     width: 85%;
     height: 280px;
+    background: #333;
     }
 }
